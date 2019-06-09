@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <script src="DocumentFragment.js"></script>
+    <link href="TOC.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="TOCEntry TOCLevel1">Заголовок 1 уровня</h1>
+    <h2 class="TOCEntry TOCLevel2">Заголовок 2 уровня</h2>
+    <h3 class="TOCEntry TOCLevel3">Заголовок 3 уровня</h3>
+    <table>
+      <title>REVERSE</title>
+      <th>)</th>
+      <th>))</th>
+      <th>)))</th>
+      <tr id="TR">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <button onclick="reverse(document.getElementById('TR'))">REVERSE</button>
+    <h3 class="TOCEntry TOCLevel3">Заголовок 3 уровня</h3>
+    <ol id="List">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ol>
+    <button onclick="reverse(document.getElementById('List'))">REVERSE</button>
+    <h2 class="TOCEntry TOCLevel2">Еще один Заголовок 2 уровня</h2>
+  </body>
+</html>

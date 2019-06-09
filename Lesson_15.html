@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>DOM</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="Lesson_15.js"></script>
+  </head>
+  <body onload="alert(sibling(document.getElementById('Child2'),1))">
+    <ul ID="parent">
+      <li ID="Node1">Узел 1</li>
+      <li ID="Node2">
+        Узел 2
+        <ul ID="inside">
+          <li ID="Child1">Потомок 1</li>
+          <li ID="Child2">Потомок 2</li>
+          <li ID="Child3">Потомок 3</li>
+        </ul>
+      </li>
+      <li ID="Node3">Узел 3</li>
+    </ul>
+  </body>
+</html>

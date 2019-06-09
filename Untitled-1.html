@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+  <script>
+    function myMessage() {
+      alert("My Message");
+    }
+  </script>
+</head>
+<body>
+  <p>Каждые три секунды будет появляться сообщение</p>
+  <button onclick='m=setInterval("myMessage()",3000)'>Start</button>
+  <button onclick="clearInterval(m)">Stop</button>
+</body>

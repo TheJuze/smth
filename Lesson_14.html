@@ -1,0 +1,40 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <script src="Lesson_14.js"></script>
+  </head>
+  <body>
+    <ul id="idList" name="idList">
+      <li
+        title="Щелкни и раскрой"
+        style="cursor: hand;"
+        onmouseover="flashMe(this,'red')"
+        onmouseout="flashMe(this,'black')"
+        onclick="toggleList(this.children[0])"
+      >
+        Один
+        <ul
+          ID="idListOneA"
+          name="idListOneA"
+          style="display: none; cursor: default;"
+        >
+          <li title="Файл А">А</li>
+          <li title="Файл Б">Б</li>
+        </ul>
+      </li>
+
+      <li title="Нераскрывающийся список">Два</li>
+      <li title="Нераскрывающийся список">Три</li>
+    </ul>
+    <button onclick ="autoNew" style="margin:0 auto">AUTO</button>
+    <img id="SRC" src="../Илита.png" onmouseover="newPicture()"  width="1000" height="1000"/>
+    <div
+      class="square"
+      id="Banner"
+      style="position:absolute;width:100px;height:100px;
+      color:yellow;background-color:black;"
+    ></div>
+  </body>
+</html>
